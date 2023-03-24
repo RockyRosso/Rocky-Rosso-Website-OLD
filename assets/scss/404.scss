@@ -1,0 +1,20 @@
+/* Nuxt is weird */
+
+#type-1 {
+    #type-2 {
+        #type-3 {
+            #type-4 {
+                #type-5 {
+                    font-size: 100px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}

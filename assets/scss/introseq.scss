@@ -1,0 +1,32 @@
+@use '../base.scss';
+
+.introseg {
+    opacity: 1;
+    font-size: 50px;
+
+    margin-top: 50px;
+}
+
+.intro-ele-static {
+    .intro-ele {
+        opacity: 0;
+    }
+}
+
+.large {
+    font-size: 8vw;
+}
+
+/* --- Cards --- */
+
+.intro-cards {
+    @include base.cards_grid;
+}
+
+.intro-card {
+    @include base.card;
+}
+
+.intro-card-img {
+    width: 50%;
+}

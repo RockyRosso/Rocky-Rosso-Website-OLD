@@ -1,0 +1,55 @@
+@use '../../base.scss';
+
+#selected {
+    background-color: base.$sec-hov;
+}
+
+#disabled {
+    background-color: base.$sec-hov;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pages {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    border-radius: base.$radius;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: base.$sec;
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    box-shadow: base.$shadow;
+
+    width: 600px;
+}
+
+.option {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    background-color: base.$bg;
+    
+    padding: 20px 30px 20px 30px;
+
+    border-radius: base.$radius;
+
+    transition: ease-in-out 0.2s;
+}
+
+.option:hover {
+    background-color: base.$sec;
+
+    transition: ease-in-out 0.2s;
+}
