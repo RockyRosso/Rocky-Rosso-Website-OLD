@@ -6,4 +6,4 @@ COPY . ./
 
 RUN npm install && npm run build
 
-CMD [ "npm", "run", "start" ]
+CMD [ "node", ".output/server/index.mjs" ]
