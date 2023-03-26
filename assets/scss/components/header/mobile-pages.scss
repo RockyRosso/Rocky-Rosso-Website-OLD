@@ -1,0 +1,30 @@
+@use '../../../base.scss';
+
+.mobile-pages {
+    display: grid;
+    text-align: center;
+
+    visibility: hidden;
+    position: absolute;
+}
+
+.mobile-option {
+    background-color: base.$sec;
+
+    text-decoration: none;
+    position: relative;
+    
+    font-size: 30px;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-pages {
+        visibility: visible;
+        position: relative;
+    }
+}

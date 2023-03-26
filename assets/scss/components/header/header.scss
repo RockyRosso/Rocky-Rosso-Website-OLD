@@ -1,4 +1,4 @@
-@use '../../base.scss';
+@use '../../../base.scss';
 
 @keyframes head-anim {
     from {
@@ -60,4 +60,15 @@
     z-index: 1;
 
     animation: 0.5s ease-out both head-anim;
+}
+
+@media screen and (max-width: 600px) {
+    .head-txt {
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .head {
+        box-shadow: none;
+    }
 }

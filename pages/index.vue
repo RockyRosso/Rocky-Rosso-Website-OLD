@@ -7,20 +7,3 @@
 
     <footersec />
 </template>
-
-
-
-<script lang="ts">
-
-export default {
-    data() {
-        return {
-            latest: 'N/A'
-        }
-    },
-
-    mounted() {
-    }
-}
-
-</script>

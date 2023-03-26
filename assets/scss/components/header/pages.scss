@@ -1,4 +1,4 @@
-@use '../../base.scss';
+@use '../../../base.scss';
 
 #selected {
     background-color: base.$sec-hov;
@@ -52,4 +52,11 @@
     background-color: base.$sec;
 
     transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+    .pages {
+        left: 0;
+        @include base.media();
+    }
 }

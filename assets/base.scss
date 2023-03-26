@@ -13,10 +13,22 @@ $radius: 20px;
 
 $shadow: 0px 2px 5px black;
 
+@keyframes reveal-anim {
+    from {
+        opacity: 0;
+        top: 20px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
 body, html, #__nuxt {
     height: 100%;
     background-color: $bg;
-    margin: auto;
+    margin: 0;
 }
 
 li,
@@ -47,18 +59,6 @@ p {
     font-size: 80px;
 }
 
-@keyframes reveal-anim {
-    from {
-        opacity: 0;
-        top: 20px;
-    }
-
-    to {
-        opacity: 1;
-        top: 0px;
-    }
-}
-
 @mixin cards_grid() {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
@@ -75,4 +75,38 @@ p {
     box-shadow: $shadow;
 
     height: $height;
+}
+
+@mixin btn($width: 100px) {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    text-decoration: none;
+    font-size: 20px;
+
+    background-color: $sec;
+    
+    padding: 20px 30px 20px 30px;
+
+    border-radius: $radius;
+
+    width: $width;
+
+    transition: ease-in-out 0.2s;
+}
+
+@mixin btn-hover() {
+    background-color: $bg;
+    transition: ease-in-out 0.2s;
+}
+
+@mixin media() {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media screen and (max-width: 450px) {
+    .cmd {
+        font-size: 50px;
+    }
 }

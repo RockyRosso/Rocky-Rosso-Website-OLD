@@ -6,4 +6,4 @@
     </div>
 </template>
 
-<style src="assets/scss/components/pages.scss"></style>
+<style src="assets/scss/components/header/pages.scss"></style>

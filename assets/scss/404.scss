@@ -1,3 +1,5 @@
+@use '../base.scss';
+
 /* Nuxt is weird */
 
 #type-1 {
@@ -17,4 +19,16 @@
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+.error-btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @include base.btn($width: 150px);
+}
+
+.error-btn:hover {
+    @include base.btn-hover();
 }
