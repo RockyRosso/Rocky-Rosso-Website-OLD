@@ -2,6 +2,8 @@ export default defineNuxtConfig({
 
     css: ['assets/base.scss'],
 
+    ssr: true,
+
     typescript: {
         strict: false,
         tsConfig: {
