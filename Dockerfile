@@ -1,11 +1,9 @@
 FROM node:latest
 
-WORKDIR ./
+WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY . ./
 
 RUN npm install && npm run build
 
-COPY . .
-
-CMD [ "node", ".output/server/index.mjs" ]
+CMD [ "node", "run", "start" ]
