@@ -3,7 +3,7 @@
 
     <div class="sections">
         <div class="intro">
-            <h1 class="intro-ele-static large" style="opacity: 0;">Welcome...</h1>
+            <h1 class="intro-ele-static" style="opacity: 0; font-size: 8vw;">Welcome...</h1>
 
             <div style="margin-bottom: 500px;"></div>
 
@@ -133,4 +133,4 @@ export default {
 
 </script>
 
-<style src="assets/scss/introseq.scss" />
+<style src="assets/scss/components/introseq.scss" />

@@ -1,0 +1,40 @@
+@use '../base.scss';
+
+.projects {
+    display: grid;
+    place-content: center;
+    gap: 30px;
+}
+
+.project {
+    @include base.card(120px);
+}
+
+.projects-latest {
+    @include base.card(120px);
+    margin-bottom: 100px;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-btn {
+    @include base.btn(150px);
+
+    cursor: pointer;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: none;
+    text-align: center;
+    
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+        background-color: base.$btn-hov;
+    }
+}

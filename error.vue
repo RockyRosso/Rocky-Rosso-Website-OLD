@@ -9,4 +9,4 @@
     </div>
 </template>
 
-<style src="assets/scss/404.scss"></style>
+<style src="assets/scss/pages/404.scss"></style>
