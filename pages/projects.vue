@@ -111,7 +111,7 @@ export default {
         },
 
         async load_projects() {
-            if (localStorage.getItem('projs')) this.projs_cache = JSON.parse(localStorage.getItem('projs'));
+            if (localStorage.getItem('projs')) return this.projs_cache = JSON.parse(localStorage.getItem('projs'));
 
             const res: Array<any> = await $fetch('https://api.github.com/users/RockyRosso/repos', {
                 method: 'GET',
