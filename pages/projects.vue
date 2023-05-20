@@ -10,7 +10,7 @@
                 <button class="tab-btn" id="other">Other Projects</button>
             </div>
 
-            <div v-if="tab === 'github'" class="projs" style="opacity: 0;">
+            <div v-if="tab === 'github'" class="projs" style="opacity: 1;">
                 <h1>Latest Project:</h1>
                 <div class="projects-latest">
                     <h1><a id="latest-proj-link" href="https://github.com/RockyRosso/">{{latest_proj.name }}</a></h1>
