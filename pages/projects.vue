@@ -67,11 +67,8 @@ export default {
             const latest_link = $('#latest-proj-link');
             latest_link.attr('href', `https://github.com/RockyRosso/${this.latest_proj.name}`);
 
-            console.log(this.projs_cache)
-
             if (this.projs_cache.length > 0) {
                 for (let i = 0; i < this.projs_cache.length; i++) {
-                    console.log(this.projs_cache[i]);
                     projects.prepend(
                         `<div class="project">
                             <h1><a href="https://github.com/RockyRosso/${this.projs_cache[i].name}">${this.projs_cache[i].name}</a></h1>
@@ -99,8 +96,10 @@ export default {
                 this.tab = clicked.id;
 
                 if (clicked.id === 'github') {
-                    console.log('yay');
-                    this.load_projs();
+                    setTimeout(() => {
+                        this.load_projs();
+                    }, 200)
+                    
                 }
             });
         },
