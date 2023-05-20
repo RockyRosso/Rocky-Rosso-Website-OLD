@@ -18,7 +18,13 @@
                     <p>{{ latest_proj.desc }}</p>
                 </div>
 
-                <div class="projects"></div>
+                <div class="projects" v-for="(proj, i) in projs_cache">
+                    <div class="project">
+                        <h1><a href="https://github.com/RockyRosso/{{ proj.name }}">{{ proj.name }}</a></h1>
+                        <p>Primary Language: {{ proj.language }}</p>
+                        <p>{{ proj.description }}</p>
+                    </div>
+                </div>
             </div>
             <div v-else>
                 <p>sfsgdsfb</p>
@@ -55,7 +61,7 @@ export default {
             const cmd_txt = $('.cmd');
             utils.type_anim('/projects', cmd_txt, 50);
 
-            this.load_projs();
+            //this.load_projs();
         },
 
         load_projs() {
@@ -105,6 +111,8 @@ export default {
         },
 
         async load_projects() {
+            if (localStorage.getItem('projs')) this.projs_cache = JSON.parse(localStorage.getItem('projs'));
+
             const res: Array<any> = await $fetch('https://api.github.com/users/RockyRosso/repos', {
                 method: 'GET',
                 responseType: 'json'
@@ -115,6 +123,7 @@ export default {
             this.latest_proj.language = res[res.length - 1].language;
 
             this.projs_cache = res;
+            localStorage.setItem('projs', JSON.stringify(res));
         }
     },
 
