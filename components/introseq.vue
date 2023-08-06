@@ -36,22 +36,22 @@
 
                     <div class="intro-ele intro-cards">
                         <div class="intro-card">
-                            <img class="intro-card-img" src="../assets/media/langs/javascript_icon.png" />
+                            <img class="intro-card-img" src="../assets/media/icons/langs/javascript_icon.png" />
                             <h1>Javascript</h1>
                         </div>
 
                         <div class="intro-card">
-                            <img class="intro-card-img" src="../assets/media/langs/python_icon.png" />
+                            <img class="intro-card-img" src="../assets/media/icons/langs/python_icon.png" />
                             <h1>Python</h1>
                         </div>
 
                         <div class="intro-card">
-                            <img class="intro-card-img" src="../assets/media/langs/gdscript_icon.png" />
+                            <img class="intro-card-img" src="../assets/media/icons/langs/gdscript_icon.png" />
                             <h1>GDScript</h1>
                         </div>
 
                         <div class="intro-card">
-                            <img class="intro-card-img" src="../assets/media/langs/lua_icon.png" />
+                            <img class="intro-card-img" src="../assets/media/icons/langs/lua_icon.png" />
                             <h1>Lua</h1>
                         </div>
                     </div>
@@ -64,18 +64,18 @@
 
                     <div class="intro-ele intro-cards">
                         <div class="intro-card">
-                            <img class="intro-card-img" src="../assets/media/tools/netlify_icon.png" />
+                            <img class="intro-card-img" src="../assets/media/icons/tools/netlify_icon.png" />
                             <h1><a href="https://www.netlify.com/">Netlify</a></h1>
                         </div>
 
                         <div class="intro-card">
-                            <img class="intro-card-img" src="../assets/media/tools/vscode_icon.png" />
+                            <img class="intro-card-img" src="../assets/media/icons/tools/vscode_icon.png" />
                             <h1><a href="https://code.visualstudio.com/">Visual Studio Code</a></h1>
                         </div>
 
                         <div class="intro-card">
-                            <img class="intro-card-img" src="../assets/media/tools/trello_icon.png" />
-                            <h1><a href="https://trello.com/">Trello</a></h1>
+                            <img class="intro-card-img" src="../assets/media/icons/tools/clickup_icon.png" />
+                            <h1><a href="https://clickup.com/">ClickUp</a></h1>
                         </div>
                     </div>
                 </div>
@@ -125,9 +125,7 @@ export default {
             this.reveal();
         })
 
-        setTimeout(() => {
-            this.introseq();
-        }, 500)
+        this.introseq();
     }
 }
 
